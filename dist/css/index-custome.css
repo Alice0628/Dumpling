@@ -1,0 +1,56 @@
+body {
+  font-family: "Delius", cursive;
+  background-image: url(../../images/background.jpeg);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  color: #a55340;
+  border-bottom: 2px solid #ccc;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  font-family: "Delius", cursive;
+  color: #a55340;
+}
+
+.font-quote {
+  font-family: "Kaushan Script", handwriting;
+  color: #a55340;
+}
+
+.footer {
+  margin-top: 50px;
+  font-family: "Delius", cursive;
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+#myCarousel {
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index-custome.css.map */

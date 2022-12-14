@@ -1,0 +1,165 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css";
+.showNavUl {
+  background-color: antiquewhite;
+  display: none;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+#navUl {
+  padding-right: 20%;
+}
+
+#navUl li a {
+  color: #a55340;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navZone, .navbar, .cart1, header {
+    display: none;
+  }
+  .showNavUl {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+body {
+  background-image: url("../../images/bgimage-cartoon.jpg");
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: "Delius", cursive;
+  font-size: 1.2rem;
+}
+
+.on {
+  display: block;
+  position: relative;
+  top: 5vh;
+}
+
+.off {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+.reservation {
+  margin: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 5px;
+}
+
+.form-check {
+  margin-left: 20px;
+}
+
+.form-check-label, .request {
+  font-size: 1rem;
+}
+
+.is-info {
+  margin: 0 10px;
+  width: 100%;
+  background-color: rgba(129, 142, 216, 0.2);
+}
+
+.is-info:focus,
+#customer:focus {
+  background-color: white;
+}
+
+i {
+  color: black;
+}
+
+#customer {
+  background-color: rgba(129, 142, 216, 0.2);
+}
+
+.headerImg {
+  background-image: url("../../images/header.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10rem;
+  width: 100%;
+}
+
+.hImg {
+  width: 12rem;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.navbar {
+  margin: -3rem;
+}
+
+.navZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#icon {
+  margin: -2rem;
+}
+
+#icon img {
+  width: 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Delius", cursive;
+  color: #a55340;
+}
+
+.footer {
+  margin-top: 50px;
+  font-family: "Delius", cursive;
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.contact > i {
+  color: white;
+}
+
+.contact > span {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=reservation-custome.css.map */

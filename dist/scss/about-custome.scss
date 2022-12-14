@@ -1,0 +1,154 @@
+$margin-l-s: 2rem;
+$text-align: center;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+.showNavUl {
+  background-color: antiquewhite;
+  display: none;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+#navUl {
+  padding-right: 20%;
+}
+#navUl li  a{
+  color: #a55340;
+  text-decoration: none;
+  } 
+@media only screen and (max-width: 768px) {
+  .navZone, .navbar, .cart1, header {
+    display: none;
+  }
+  .showNavUl {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+ body {
+    background-image: url('../../images/bkg.png');
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family: "Delius", cursive;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #a55340;
+    
+}
+
+body + div {
+    height:10%
+}
+
+// header part: everypage except homepage should have this part
+.headerImg {
+    background-image: url('../../images/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+    width:100%;
+  
+}
+
+.hImg {
+    width: 12rem;
+    position: absolute;
+    top:0;
+    left:5px
+
+} 
+
+.navZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  
+  .navbar{
+    margin: -3rem;
+  }
+
+  #icon {
+    margin: -2rem;
+  }
+  
+  #icon img {
+    width: 20px;
+  }
+
+
+.nav-link {
+    color: #a55340;
+}
+
+// every page should have above part
+
+.container {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: map-get($map:$font-weights , $key:bold );
+    text-align: $text-align;
+    color:#000000;
+    margin: 2rem;
+}
+
+.originpart {
+    background-color: rgba(219, 233, 244,0.5);
+    padding: 1rem;
+}
+
+.artpart {
+    margin-top: 5rem;
+}
+
+.step {
+    margin-top: -15px;
+    width: 6em;
+    height: 2em;
+    padding: 0.3em;
+    background-color:bisque;
+    color:  #0d6efd;
+    font-family: "Delius", cursive;
+   
+}
+
+.art {
+    background-color: rgba(219, 233, 244,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer {
+    margin-top: 50px;
+    font-family: "Delius", cursive;
+    text-align: center;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+  
+  footer h3 {
+    font-size: 1rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }

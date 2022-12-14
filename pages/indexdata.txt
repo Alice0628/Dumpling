@@ -1,0 +1,15 @@
+                <div class="item active">
+                    <img src="../images/dumpling-ct.jpg" alt="First slide" >
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-1rz.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-2rz.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-3rz.jpg" alt="Four slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-4rz.jpg" alt="Five slide">
+                </div>

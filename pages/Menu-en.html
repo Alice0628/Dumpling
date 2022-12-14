@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/menu.html# -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" menu | chinese dumpling | vegetarian dumpling | chinese side dishes"
+    />
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../dist/css/menu-custome.css" />
+
+    <!--font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Delius&family=Edu+VIC+WA+NT+Beginner&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <script src="https://kit.fontawesome.com/01965e6784.js" crossorigin="anonymous"></script> -->
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+    />
+    <!--jQuary  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/menu.json" defer></script>
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/shopping_cart.js"></script>
+
+    <title>Menu</title>
+  </head>
+  <!-- <body data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed=""> -->
+
+  <body>
+    <!-- <div class="container-fluid p-0"> -->
+    <!-- <div class="container-fluid"> -->
+
+    <!-- header -->
+    <div>
+      <header class="headerImg">
+        <img class="hImg" src="../images/logo.png" alt="" />
+      </header>
+      <div class="navZone">
+        
+        <nav class="navbar">
+          <ul class="nav navUl nav-pills">
+            <li class="nav-item active">
+              <a href="./index-en.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Menu-en.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about-en.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reservation_en.html" class="nav-link">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Contact_Us_en.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Menu-fr.html" class="nav-link"><small>Fr</small></a>
+            </li>
+          </ul>
+          <div class="cart1">
+           <a href="./shopping_cart.html"> <img style="width:50%; background-color: transparent;" src="https://img-qn.51miz.com/Element/00/86/59/14/186c2d0c_E865914_e2ad95b3.png!/quality/90/unsharp/true/compress/true/format/png/fw/720" alt=""></a>
+            <span id="cartNum1"></span>
+        </div>
+        </nav>
+      </div>
+      <div class="showNavUl">
+        <img class="hImg" src="../images/logo.png" alt="">
+        <ul id="navUl">
+            <li><a href="./index-en.html">Home</a></li>
+            <li><a href="./Menu-en.html">Menu</a></li>
+            <li><a href="./about-en.html">About</a></li>
+            <li><a href="./reservation_en.html">Reservation</a></li>
+            <li><a href="./Contact_Us_en.html">Contact us</a></li>
+            <li><a href="./Menu-fr.html">Fr</a></li>
+        </ul>
+        <div class="cart">
+          <a href="./shopping_cart.html"> <img style="width:50%; opacity: 1;"; src="https://img-qn.51miz.com/Element/00/86/59/14/186c2d0c_E865914_e2ad95b3.png!/quality/90/unsharp/true/compress/true/format/png/fw/720" alt=""></a>
+            <span id="cartNum"></span>
+        </div>
+    </div>
+    </div>
+
+    <!-- navi -->
+    <div class="aside">
+      <ul>
+        <li class="aside-li">
+          <a class="aside-link" href="#steamDumpling">Steamed Dumpling</a>
+        </li>
+        <li class="aside-li">
+          <a class="aside-link" href="#panFried">Pan-Fried Dumpling</a>
+        </li>
+        <li class="aside-li">
+          <a class="aside-link" href="#vege">Vegetarian Dumpling</a>
+        </li>
+        <li class="aside-li">
+          <a class="aside-link" href="#sideDish">Side Dish</a>
+        </li>
+      </ul>
+    </div>
+    <!-- main content -->
+    <div class="main">
+      <!-- steamed dumpling -->
+      <div id="steamDumpling" class="container-flow">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <img src="../images/steamed.png" alt="steamed dumpling" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <h3 class="text-center col-4">Steamed Dumpling</h3>
+        </div>
+        <br />
+        <div class="row">
+          <div
+            id="steamDumpling-menu"
+            class="d-flex flex-row align-items-center flex-wrap menu-container"
+            style="width:95%;"
+          ></div>
+          <div id="steamDumpling-modal"></div>
+        </div>
+      </div>
+
+      <!-- pan-fried -->
+      <div id="panFried" class="container-flow">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <img src="../images/fried.png" alt="fried dumpling" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <h3 class="text-center col-4">Pan-Fried Dumpling</h3>
+        </div>
+        <br />
+        <div class="row">
+          <div id="panFried-menu"
+          class="d-flex flex-row align-items-center flex-wrap menu-container" style="width:95%;"></div>
+          <div id="panFried-modal"></div>
+        </div>
+      </div>
+
+      <!-- vegetarian -->
+      <div id="vege" class="container-flow">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <img src="../images/veg.png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <h3
+            style="margin-top: -30px; margin-bottom: 25px"
+            class="text-center col-4"
+          >
+            Vegetarian Dumpling
+          </h3>
+        </div>
+        <div class="row">
+          <div id="vege-menu"
+          class="d-flex flex-row align-items-center flex-wrap menu-container" style="width:95%;"></div>
+          <div id="vege-modal"></div>
+        </div>
+      </div>
+
+      <!-- side dish -->
+      <div id="sideDish" class="container-flow">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <img src="../images/side-dish.png" alt="side dish" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <h3 class="text-center col-4">Side Dish</h3>
+        </div>
+        <br />
+        <div class="row">
+          <div id="sideDish-menu"
+          class="d-flex flex-row align-items-center flex-wrap menu-container" style="width:95%;"></div>
+          <div id="sideDish-modal"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer container-flow">
+      <footer class="row text-white" style="background-color: #69564b;">
+          <div class="col-lg-4">
+              <i class="bi bi-geo-alt-fill "></i>
+              <span>Address: 333 Rue Rich, Montreal,CA</span>
+          </div>
+          <div class="col-lg-4">
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon-Fri 10:00 - 21:00, Sat-Sun 11:00 - 22:00</span>
+          </div>
+          <div class="col-lg-4">
+              <i class="bi bi-telephone-fill"></i>
+              <span>Telephone: 555 321 1212</span><br>
+              <i class="bi bi-envelope-fill"></i>
+              <span>Email: info@dumpling.org</span>
+          </div>
+      </footer>
+  </div>
+    <!-- </div> -->
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>

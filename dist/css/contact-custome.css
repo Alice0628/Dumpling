@@ -1,0 +1,112 @@
+.showNavUl {
+  background-color: antiquewhite;
+  display: none;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+#navUl {
+  padding-right: 20%;
+}
+
+#navUl li a {
+  color: #a55340;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navZone, .navbar, .cart1, header {
+    display: none;
+  }
+  .showNavUl {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+body {
+  background: url(../../images/dumpling-ct.jpg);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 10px;
+  margin: 10px auto;
+  font-family: "Delius", cursive;
+}
+
+.form-control {
+  background-color: rgba(129, 142, 216, 0.2);
+}
+
+.p,
+label {
+  color: #a55340;
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
+.headerImg {
+  background-image: url("../../images/header.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10rem;
+  width: 100%;
+}
+
+.hImg {
+  width: 12rem;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.navbar {
+  margin: -3rem;
+}
+
+#icon {
+  margin: -2rem;
+}
+
+#icon img {
+  width: 20px;
+}
+
+.navZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Delius", cursive;
+  color: #a55340;
+}
+
+.footer {
+  margin-top: 50px;
+  font-family: "Delius", cursive;
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=contact-custome.css.map */

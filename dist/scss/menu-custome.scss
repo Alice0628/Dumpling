@@ -1,0 +1,212 @@
+$footerFontSize: (
+    "title": 1rem,
+    "text": 0.8rem,
+);
+
+
+
+.showNavUl {
+  background-color: antiquewhite;
+  display: none;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+#navUl {
+  padding-right: 20%;
+}
+#navUl li  a{
+color: #a55340;
+text-decoration: none;
+} 
+
+@media only screen and (max-width: 768px) {
+  .navZone, .navbar, .cart1, header {
+    display: none;
+  }
+  .showNavUl {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+#cartNum,#cartNum1{
+  
+  z-index: 100;
+  font-size: 1rem;
+  color:red;
+  text-align: center;
+  position: relative;
+  left:-28%;
+  bottom:1.9vh;
+  
+}
+.cart {
+  width: 10%;
+  height: 10%;
+
+}
+.cart1 {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  left: -25%;
+  top: 30%
+}
+
+
+
+body {
+    background-image: url('../../images/bkg.png');
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family: 'Delius', cursive;
+    width: auto;
+}
+
+
+// header part: everypage except homepage should have this part
+.headerImg {
+    background-image: url('../../images/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+    width:100%;
+  
+}
+
+  
+
+.hImg {
+    width: 12rem;
+    position: absolute;
+    top:0;
+    left:5px
+
+} 
+
+.navZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  
+  .navbar{
+    margin: -3rem;
+  }
+
+  #icon {
+    margin: -2rem;
+  }
+
+  #icon img {
+    width: 20px;
+  }
+
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Delius', cursive;
+    color: #a55340;
+}
+
+// every page should have above part
+
+.aside {
+    position: fixed;
+    font-size: 1.2rem;   
+    width: 300px;
+    height:400px;
+    background-image: url('https://i02piccdn.sogoucdn.com/473ce59503cbf8da');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding: 10px;
+    
+}
+
+.aside ul {
+    padding-top: 20%;
+}
+
+.aside-li{
+   margin:1rem 0;
+   font-family: 'Delius', cursive;
+}
+.aside-link{
+    color: #a55340;
+}
+
+.main {
+    width: auto;
+    margin-left: 20rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .aside {
+        position: relative;
+        display:block;
+        margin: 10px auto;
+    }
+    .main {
+        width: auto;
+        margin: auto;
+    }
+   
+}
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #a55340;
+    border:2px solid #a55340;
+    width: 48% !important;
+    border-radius: 20px;
+
+}
+
+.sideDish {
+    margin-top: 3rem;
+}
+
+.btn-cart{
+    background-color: #a55340;
+    color: #fff;
+    border: #a55340 1px solid;
+    
+}
+.btn-cart:hover{
+    background-color: #fff;
+    color: #a55340;
+    border: #a55340 1px solid;
+}
+
+// every page should have this part 
+
+.footer {
+    margin-top: 50px;
+    font-family: 'Delius', cursive;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: map-get($map: $footerFontSize, $key: title);
+}
+
+footer p {
+    font-size: map-get($map: $footerFontSize, $key: text);
+}
+
+// every page should have above part

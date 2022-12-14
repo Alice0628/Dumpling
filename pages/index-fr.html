@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L&l Dumplings restraurant | fast food | Asian food | online order | take out | food delivery | online reservation">
+
+
+    <!-- <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.css"> -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Delius&family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Delius&family=Edu+VIC+WA+NT+Beginner&family=Kaushan+Script&display=swap');
+    </style>
+       <!-- boostrap -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+       <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+       <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+     <!-- css -->
+            <link rel="stylesheet" href="../dist/css/index-custome.css">
+        <title>Accueil</title>
+</head>
+<body onload="getData('indexdata.txt','targetDiv')">
+    <div class="container" >
+        <div class="row header-wrapper">
+            <div class="row">
+                <div class="col-11">
+                    <!-- nav -->
+                    <ul class="nav nav-pills justify-content-end">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="./Menu-fr.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about-fr.html" class="nav-link">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./reservation_fr.html" class="nav-link">Réservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Contact_Us_fr.html" class="nav-link">Nous Contacter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index-en.html" class="nav-link"><small>En</small></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">  
+                <div class="col-2">
+                    <img src="../images/logo.png" alt="logo" style="width:200px ;">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 text-center" style="padding-top: 50px;">
+                        <div class="row">
+                            <h3 class="col-12 justify-content-center">Bienvenue à la Maison</h3>
+                            <h1 class="col-12 justify-content-center font-quote">L&L Dumpling</h1>
+                        </div>
+                        <div class="row text-center mt-5 pt-2">
+                            <h5>Le L&L Dumpling suit la philosophie de L&L, le plus grand penseur chinois. En bref, il précise que :</h5>
+                            <h3 class="font-quote">"Peu importe la lenteur avec laquelle vous allez, tant que les plats chinois que vous mangez sont savoureux"</h3>
+                        </div>
+                        <!-- <button type="button" class="btn btn-outline-secondary rounded-pill col-4 mb-5" style="color:#BD000A;" >À propos</button> -->
+                        
+                </div>
+                <div class="col-2">
+                    <img src="../images/header-img.png"  alt="header-img" style="width:300px;">
+                </div>
+            </div>
+        </div>
+        <!-- recommend -->
+        <!-- <div class="container-fluid recommend">
+            <div class="row text-center col-11">
+                <h3>Nos Recommandations</h3>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2">
+                    <div class="card" style="width: 18rem; ">
+                        <img class="card-img-top" src="../images/rec-steamed.jpg" alt="steamed dumpling">
+                        <div class="card-body">
+                          <h5 class="card-text">Porc Classique</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../images/rec-fried.jpg" alt="fried dumpling">
+                        <div class="card-body">
+                          <h5 class="card-text">Porc & Chou</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../images/rec-cucumber.jpg" alt="cucumber">
+                        <div class="card-body">
+                          <h5 class="card-text">Concombre Épicée</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <br>
+        </div> -->
+
+        <div id="myCarousel" class="carousel slide " data-ride="carousel" data-interval="3000">
+            <!-- carousel-indicators -->
+            <ol class="carousel-indicators" style="height: 30px;">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- carousel-inner -->
+            <div class="carousel-inner" id="targetDiv">
+                <!-- <div class="item active">
+                    <img src="../images/dumpling-ct.jpg" alt="First slide" >
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-1rz.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-2rz.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-3rz.jpg" alt="Four slide">
+                </div>
+                <div class="item">
+                    <img src="../images/dumpling-4rz.jpg" alt="Five slide">
+                </div> -->
+            </div>
+            <!-- carousel-control -->
+            <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+            <!-- button -->
+            <div style="text-align:center;">
+                <input type="button" class="btn slide-one" value="Pan-Fried Dumpling">
+                <input type="button" class="btn slide-two" value="Side Dish">
+                <input type="button" class="btn slide-three" value="Steamed Dumpling">
+                <input type="button" class="btn slide-four" value="Vegerian Dumpling">
+                <input type="button" class="btn slide-five" value="Shrimp Dumpling">
+            </div>
+        </div>
+        <script>
+            var xhr = false;
+
+            // configuring  xhr object
+            if (window.XMLHttpRequest) {
+                //  window.alert('Browser can do AJAC - Using XmlHttpRequest object')
+                // initializing the xhr object
+                xhr = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                // initializing the ActiveXObject object
+                window.alert('Browser can not do AJAC - Microsoft.XMLHTTP object');
+            }
+
+            // handling data downloads from the server using anonymous function
+            function getData(dataSource, divID) {
+                if (xhr) {
+                    let obj = document.getElementById(divID);
+                    xhr.open("get", dataSource);
+
+                    // passing data to the server using ajax and the get or post http method
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            obj.innerHTML = xhr.responseText;
+                        }
+                    }
+                    xhr.send();
+                }
+            } // end function getData
+
+            $(function () {
+                // Loop to a specific frame 
+                $(".slide-one").click(function () {
+
+                    $("#myCarousel").carousel(0);
+                });
+                $(".slide-two").click(function () {
+
+                    $("#myCarousel").carousel(1);
+                });
+                $(".slide-three").click(function () {
+                    $("#myCarousel").carousel(2);
+                });
+                $(".slide-four").click(function () {
+                    $("#myCarousel").carousel(3);
+                });
+                $(".slide-five").click(function () {
+                    $("#myCarousel").carousel(4);
+                });
+            });
+        </script>
+
+        <!-- footer -->
+        <div class="footer container-flow">
+            <footer class="row text-white" style="background-color: #69564b;">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h3>L&amp;L Dumpling</h3>
+                    <p>Les gens visitent généralement un restaurant en raison de sa bonne cuisine ou de sa bonne ambiance. L&L Dumpling a les deux !</p>
+                    <p>Nous offrons une grande variété de raviolis traditionnels chinois faits à la main, plus grands que nature, réalisés dans un style traditionnel !</p>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <h3>Nous Contacter</h3>
+                    <i class="bi bi-geo-alt-fill "></i>
+                    <span>Adresse: 333 Rue Rich, Montréal,CA</span><br>
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>Télephone: 555 321 1212</span><br>
+                    <i class="bi bi-clock-fill"></i>
+                    <span>Lun-Ven 10:00 - 21:00, Sam-Dim 11:00 - 22:00</span><br>
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Email: info@dumpling.org</span>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <h3>Inscrivez-vous pour des réductions</h3>
+                    <p>Ne manquez jamais une chance de commander une boulette de porc juteuse classique à un prix réduit !</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>

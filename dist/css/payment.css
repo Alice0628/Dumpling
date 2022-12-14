@@ -1,0 +1,198 @@
+
+.showNavUl {
+    background-color: antiquewhite;
+    display: none;
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  
+  #navUl {
+    padding-right: 20%;
+  }
+  #navUl li  a{
+    color: #a55340;
+    text-decoration: none;
+    } 
+  
+  @media only screen and (max-width: 768px) {
+    .navZone, .navbar, .cart1, header {
+      display: none;
+    }
+    .showNavUl {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+/* Header start */
+.headerImg {
+    background-image: url("../../images/header.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #icon {
+        display: none;
+    }
+}
+
+.hImg {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.navZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    margin: -3rem;
+}
+
+#icon {
+    margin: -2rem;
+}
+
+#icon img {
+    width: 20px;
+}
+
+/* Header end */
+
+body {
+    background-color: beige;
+    font-family: "Delius", cursive;
+}
+
+#container {
+    margin: auto;
+    width: 70%;
+    height:calc(100vh - 220px);
+}
+
+table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+}
+
+tr,
+td {
+    padding: 5px 0;
+}
+
+form {
+    background: rgba(255, 255, 255, 0);
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+}
+
+h2,
+#sign,
+#pickup,
+button {
+    margin: 10px 0;
+}
+
+.price {
+    text-align: right;
+}
+
+#btn {
+    width: 80px;
+    margin: 5px;
+    height: 30px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #422;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    height: 50px;
+    transition: 0.4s;
+    padding: 5px 0 0 10px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#detail {
+    font-size: 15px;
+    padding-bottom: 4px;
+}
+
+#btn_tkt,
+#btn_dlv {
+    margin: 10px;
+    padding: 2px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tkt_dlv input[type="radio"] {
+    display: none;
+}
+
+.tkt_dlv label:hover {
+    background: #DDD;
+}
+
+.tkt_dlv input[type="radio"]:checked+label {
+    background: pink;
+}
+
+/* Footer start */
+.footer {
+    height: 50px;
+    /* margin-top: 210px; */
+    font-family: "Delius", cursive;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=about-custome.css.map */
+
+/* Footer end */
